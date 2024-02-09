@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
+
+body {
+  background-color: #1d1d1d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+h1 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2.5em 0 3.75em 0;
+  text-transform: capitalize;
+  font-style: italic;
+  color: #c0c0c0;
+}
+
+h1 .heading {
+  color: #c0c0c0;
+  font-size: 2rem;
+}
+
+header h1 span {
+  color: #c13584;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.75em;
+}
+
+form #search-input {
+  width: 60%;
+  max-width: 400px;
+  padding: 0.63em 1.25em;
+  border: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: #333;
+  background: #c0c0c0;
+}
+
+form #search-button {
+  padding: 0.5em 1em;
+
+  background-color: #c13584;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  margin-left: 0.63em;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-inline: auto;
+  color: #fff;
+}
+
+.image-container .display-images {
+  margin-bottom: 3.75em;
+  width: 30%;
+  min-height: 200px;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  color: #fff;
+}
+
+.image-container .display-images img {
+  width: 100%;
+  object-fit: cover;
+  transition: 0pacity 0.2s ease-in-out;
+}
+
+.image-container .display-images:hover {
+  opacity: 0.8;
+}
+
+.image-container .display-images a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 0.63em;
+  text-transform: capitalize;
+}
+
+.see-more .show-more-button {
+  background: #c13584;
+  font-size: 1.2rem;
+  border: none;
+  color: #fff;
+  padding: 0.5em 1em;
+  text-align: center;
+  display: block;
+  font-display: block;
+  margin: 1em auto;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-inline: 0;
+  }
+
+  .image-container {
+    width: 45%;
+    padding-inline: 0;
+  }
+
+  .image-container .display-images {
+    width: 100%;
+    padding-inline: 0;
+    padding-inline: 0;
+  }
+
+  form #search-input {
+    width: 30%;
+  }
+}
